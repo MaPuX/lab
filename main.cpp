@@ -16,11 +16,11 @@ int main() {
 
     cout << "Before you start, enter the size of a two-dimensional array\n";
 
-    cout << "Enter the number of rows in the array\n";
+    cout << "Введите количество строк\n";
     int rows;
     cin >> rows;
 
-    cout << "Enter the number of columns in the array\n";
+    cout << "Введите количество столбцов\n";
     int columns;
     cin >> columns;
 
