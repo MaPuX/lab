@@ -16,11 +16,11 @@ int main() {
 
     cout << "Before you start, enter the size of a two-dimensional array\n";
 
-    cout << "Enter the number of rows in the array\n";
+    cout << "Введите количество строк\n";
     int rows;
     cin >> rows;
 
-    cout << "Enter the number of columns in the array\n";
+    cout << "Введите количество столбцов\n";
     int columns;
     cin >> columns;
 
@@ -37,8 +37,8 @@ int main() {
     while (menu > 0 || menu < 5) {
         switch (menu) {
             case 1: {
-                cout << "1 - randomly filling an array\n"
-                        "2 - enter the values of the elements by yourself\n";
+                cout << "1 - Случайно заполнить массив\n"
+                        "2 - Ввести элементы массива с клавиатуры\n";
                 int a;
                 cin >> a;
 
@@ -50,7 +50,7 @@ int main() {
                         FillingArrayByYourself(rows, columns, array);
                         break;
                     default:
-                        cout << "Error, enter again.";
+                        cout << "Ошибка, попробуйте снова.";
                 }
 
                 cout << endl;
@@ -66,7 +66,7 @@ int main() {
 
                 delete[] array2;
 
-                cout << "The array is sorted by descending the sums of the elements of each row";
+                cout << "Массив отсортирован по убыванию сумм элементов каждой строки";
                 cout << endl;
 
                 Menu();
@@ -86,7 +86,7 @@ int main() {
                 exit(0);
                 break;
             default: {
-                cout << "Wrong number! Enter again!" << endl;
+                cout << "Неправильное число! Попробуйте снова!" << endl;
                 Menu();
                 cin >> menu;
                 break;
